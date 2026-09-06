@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataPulse Reports — Niche Intelligence, Instantly Downloadable</title>
+  <meta name="description" content="Weekly niche intelligence reports for founders, operators, and builders. Sharp data, zero fluff. Download instantly.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e5e5e5; line-height: 1.6; }
+    .container { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+    
+    /* Header */
+    header { padding: 48px 0 24px; border-bottom: 1px solid #1e1e1e; }
+    .logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; color: #fff; }
+    .logo span { color: #4ade80; }
+    
+    /* Hero */
+    .hero { padding: 64px 0 48px; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.03em; color: #fff; line-height: 1.1; margin-bottom: 20px; }
+    .hero h1 em { font-style: normal; color: #4ade80; }
+    .hero p { font-size: 1.1rem; color: #9ca3af; max-width: 520px; margin-bottom: 32px; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; background: #4ade80; color: #0a0a0a; font-weight: 700; font-size: 0.95rem; padding: 14px 28px; border-radius: 8px; text-decoration: none; transition: background 0.2s; }
+    .cta-btn:hover { background: #86efac; }
+    
+    /* Stats bar */
+    .stats { display: flex; gap: 32px; flex-wrap: wrap; padding: 32px 0; border-top: 1px solid #1e1e1e; border-bottom: 1px solid #1e1e1e; margin-bottom: 64px; }
+    .stat-item .num { font-size: 1.8rem; font-weight: 800; color: #fff; }
+    .stat-item .label { font-size: 0.8rem; color: #6b7280; margin-top: 2px; }
+    
+    /* Products */
+    .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; color: #4ade80; text-transform: uppercase; margin-bottom: 16px; }
+    .section-title { font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 32px; letter-spacing: -0.02em; }
+    
+    .report-card { border: 1px solid #1e1e1e; border-radius: 12px; padding: 24px; margin-bottom: 16px; transition: border-color 0.2s; }
+    .report-card:hover { border-color: #374151; }
+    .report-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .report-badge { font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #052e16; color: #4ade80; border: 1px solid #166534; }
+    .report-price { font-size: 0.85rem; color: #9ca3af; margin-left: auto; }
+    .report-title { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .report-desc { font-size: 0.875rem; color: #6b7280; margin-bottom: 16px; }
+    .report-link { font-size: 0.85rem; font-weight: 600; color: #4ade80; text-decoration: none; }
+    .report-link:hover { text-decoration: underline; }
+    
+    /* Newsletter */
+    .newsletter { background: #111; border: 1px solid #1e1e1e; border-radius: 12px; padding: 32px; margin: 48px 0; }
+    .newsletter h3 { font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .newsletter p { font-size: 0.875rem; color: #6b7280; margin-bottom: 20px; }
+    .newsletter-form { display: flex; gap: 8px; }
+    .newsletter-form input { flex: 1; padding: 10px 14px; border-radius: 6px; border: 1px solid #374151; background: #0a0a0a; color: #fff; font-size: 0.875rem; outline: none; }
+    .newsletter-form button { padding: 10px 20px; border-radius: 6px; border: none; background: #4ade80; color: #0a0a0a; font-weight: 700; font-size: 0.875rem; cursor: pointer; }
+    
+    /* Footer */
+    footer { border-top: 1px solid #1e1e1e; padding: 32px 0; margin-top: 48px; }
+    footer p { font-size: 0.8rem; color: #4b5563; }
+    
+    @media (max-width: 480px) {
+      .stats { gap: 20px; }
+      .newsletter-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Data<span>Pulse</span> Reports</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h1>Niche intelligence.<br><em>Instantly downloadable.</em></h1>
+        <p>Weekly research reports on the topics that matter to founders, operators, and builders. Dense data, zero fluff. Download in seconds.</p>
+        <a href="https://datapulse.gumroad.com" class="cta-btn">Browse All Reports →</a>
+      </section>
+
+      <div class="stats">
+        <div class="stat-item">
+          <div class="num" id="report-count">3</div>
+          <div class="label">Reports published</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">Weekly</div>
+          <div class="label">New report cadence</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">$9–$19</div>
+          <div class="label">Per report</div>
+        </div>
+      </div>
+
+      <section>
+        <div class="section-label">Latest Reports</div>
+        <div class="section-title">What we're covering</div>
+
+        <div class="report-card">
+          <div class="report-meta">
+            <span class="report-badge">NEW</span>
+            <span class="report-price">$12</span>
+          </div>
+          <div class="report-title">Indie SaaS Pricing Benchmarks 2026</div>
+          <div class="report-desc">200+ bootstrapped products analyzed. The data on what converts, what churns, and why most indie SaaS founders are leaving money on the table with under-pricing.</div>
+          <a href="https://datapulse.gumroad.com" class="report-link">Get the report →</a>
+        </div>
+
+        <div class="report-card">
+          <div class="report-meta">
+            <span class="report-badge">NEW</span>
+            <span class="report-price">$14</span>
+          </div>
+          <div class="report-title">Remote Work Tool Stack Benchmarks 2026</div>
+          <div class="report-desc">Which tools top remote teams actually pay for, what got cut post-AI, and real cost-per-employee benchmarks across 150+ remote-first companies.</div>
+          <a href="https://datapulse.gumroad.com" class="report-link">Get the report →</a>
+        </div>
+
+        <div class="report-card">
+          <div class="report-meta">
+            <span class="report-badge">NEW</span>
+            <span class="report-price">$16</span>
+          </div>
+          <div class="report-title">AI Tools Adoption in Small Business 2026</div>
+          <div class="report-desc">Which AI tools SMBs are actually paying for (not just trialing), ROI benchmarks by category, and what's working vs. overhyped in the real world.</div>
+          <a href="https://datapulse.gumroad.com" class="report-link">Get the report →</a>
+        </div>
+      </section>
+
+      <div class="newsletter">
+        <h3>Get the weekly insight</h3>
+        <p>One sharp finding from our latest research, every week. Free. No fluff.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="your@email.com">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>DataPulse Reports — New report every week. All reports are instantly downloadable PDFs.</p>
+    </div>
+  </footer>
+</body>
+</html>
